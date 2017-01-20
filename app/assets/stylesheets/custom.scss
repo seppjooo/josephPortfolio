@@ -1,120 +1,199 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
-
-/* universal */
-
-body {
-  padding-top: 60px;
+.darkBG {
+  background: #999;
 }
 
-section {
-  overflow: auto;
+.darkerBG {
+  background: #666;
 }
 
-textarea {
-  resize: vertical;
+.darkestBG {
+  background: #333;
 }
 
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+body{
+  overflow-x: hidden;
 }
 
-/* typography */
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+.navigationBar {
+  padding: 2%;
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
+.navigationBar{
+  padding: 2%;
+  font-family: Bandoengsche DEMO;
+  font-size: 15px;
+  letter-spacing: 5px;
+  border: none;
+}
+    
+.intro{
+  font-family: Foglihten;
+  font-size: 20px;
+  letter-spacing: 3px;
+  padding-top: 3%;
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $gray-light;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
-}
-
-
-/* header */
-.header {
-	background: green;
-	color: white;
-	border-bottom: 4px solid yellow;
-	padding-bottom: 10px;
-	color: white;
-
-	a {
-    color: white;
-	&:hover {
-	  color: black;
-	  text-decoration: underline;
-	}
-  }
-}
-
-#logo {
-  float: left;
-  max-width: 50px;
-  height: auto;
-  margin-right: 10px;
-  font-size: 1.7em;
+div.introHeader{
+  background-image: url('Model.jpg');
+  background-size: cover;
+  height:50%;
+  width: 100%;
+  font-family: Bandoengsche DEMO;
+  font-size: 40px;
   color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  a {
-    color: white;
-	&:hover {
-	color: black;
-	text-decoration: underline;
-	}
-  }
+  display: block;
 }
 
-/* footer */
-
-footer {
-  background: green;
-  margin-top: 45px;
-  padding-top: 10px;
-  border-top: 2px solid yellow;
+div.aboutMeHeader{
+  background-image: url('Model 5.jpg');
+  background-size: cover;
+  height:50%;
+  width: 100%;
+  font-family: Bandoengsche DEMO;
+  font-size: 40px;
   color: white;
-  a {
-  	color: white;
-    text-decoration: underline;
-    &:hover {
-      color: $gray-darker;
-    }
+  display: block;
+}
+
+div.aboutMeFooter{
+  background-color: #212327;
+  background-size: cover;
+  height: 25%;
+  width: 100%;
+  font-family: Bandoengsche DEMO;
+  font-size: 40px;
+  color: white;
+  display: block;
+}
+
+div.familyHeader{
+  background-image: url('Media/Family 1.jpg');
+  background-size: cover;
+  height:50%;
+  width: 100%;
+  font-family: Bandoengsche DEMO;
+  font-size: 40px;
+  color: white;
+  display: block;
+}
+
+div.introContainer {
+    height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+div.introContainer p {
+    margin: 0; 
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
+  
+.introText{
+  text-align: center;
+  margin: 0;
+    top: 50%;
+}
+
+.contactHead{
+  font-family: Foglihten;
+  font-size: 50px;
+  letter-spacing: 3px;
+  padding-top: 3%;
+}
+
+.me{
+  font-family: Champagne & Limousines;
+  font-size: 15px;
+  letter-spacing: 3px;
+  padding-top: 4%;
+}
+
+.meSmall{
+  font-family: Champagne & Limousines;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding-top: 4%;
+}
+
+.padLeftRight{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.marginLeftRight{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.padTopBottom{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+div.divCenter{
+  width: 300px;
+  display: block;
+  margin-left: 12%;
+
+}
+
+div.emptyDiv{ 
+  display: inline-block; 
+  margin: 0; 
+  text-align: center;
+} 
+
+div.emptyDiv{ 
+  width:140px; 
+}
+
+div.hoverAnimate {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+div.hoverAnimate:hover {
+  width: 101%;
+  height: 101%;
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+
+.img-iconSmall{
+  height: 100px;
+  width: 100px;
+}
+
+.img-iconBig{
+  height: 150px;
+  width: 150px;
+}
+
+.img-iconBigger{
+  height: 250px;
+  width: 250px;
+}
+
+.img-resizeSmall{
+  max-height: 100%;
+  max-width: 100%;
 }

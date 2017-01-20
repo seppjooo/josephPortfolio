@@ -1,12 +1,14 @@
-<header class="header navbar navbar-fixed-top">
+<header>
+<head>
+</head>
+
+
+<div class="navbar navbar-default navigationBar navbar-static-top">
   <div class="container">
-  <%= link_to image_tag("USC.png", alt: "USC Logo", id: "logo"), 'http://www.usc.edu.ph/' %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   'home' %></li>
-        <li><%= link_to "Help",   'help' %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
-    </nav>
+    <div class="col-sm-3 col-xs-2"> <p style="text-align: right"> <%= link_to "Home",   'home' %> </p></div>
+    <div class=" col-sm-2 col-xs-3"> <p style="text-align: right"> <%= link_to "About",   'about' %> </p></div>
+    <div class="col-sm-2 col-xs-2"> <p style="text-align: center"> <%= link_to "O",   'home' %> </p></div>
+    <div class=" col-sm-2 col-xs-3"> <p style="text-align: left"> <%= link_to "Projects",   'project' %> </p></div>
+    <div class="col-sm-3 col-xs-2"> <p style="text-align: left"> <%= link_to "Contact", 'contact' %> </p></div>
   </div>
-</header>
+  </header>
